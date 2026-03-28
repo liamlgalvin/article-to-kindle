@@ -1,0 +1,5 @@
+{
+  "name": "Article to Kindle",
+  "description": "Convert articles into Kindle-ready EPUB ebooks.",
+  "requestFramePermissions": []
+}
