@@ -30,7 +30,7 @@ export default function App() {
 
   const amazonUrl = `https://www.amazon.${getAmazonTld()}/sendtokindle`;
 
-  const bookmarkletCode = `javascript:(function(){const article=document.querySelector('article')||document.querySelector('.post-content')||document.body;const html=article.outerHTML;const el=document.createElement('textarea');el.value=html;document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);alert('Article HTML copied to clipboard! Redirecting to Article to Kindle...');window.open('${window.location.origin}');})();`;
+  const bookmarkletCode = `javascript:(function(){const article=document.querySelector('article')||document.querySelector('.post-content')||document.body;const html=article.outerHTML;const el=document.createElement('textarea');el.value=html;document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);alert('Article HTML copied to clipboard! Redirecting to Article to Kindle...');window.open('https://liamlgalvin.github.io/article-to-kindle/');})();`;
 
   useEffect(() => {
     if (bookmarkletRef.current) {
